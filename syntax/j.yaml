@@ -1,0 +1,59 @@
+filetype: j
+
+detect:
+  filename: "\\.(ij[strp])$"
+
+rules:
+
+  - preproc: "\\b(load|require)\\b"
+
+  - symbol.brackets: "[()]"
+
+  - identifier.var: "([@&][.:]?|&.:|\\\")"
+  - identifier.var: "F[.:][.:]?"
+  - identifier.var: "[.:`]"
+  - identifier: "}"
+
+  - statement: "[=\\[\\];]"
+  - statement: "[ACeEIjLoprT^?]\\."
+  - statement: "[pqsuxZ\\\\;]:"
+  - statement: "[-,|<>+*#$%i][.:]?"
+  - statement: "[{}][.:]"
+  - statement: "{|\"[.:]|\\?|!|\\^"
+  - statement: "p\\.\\."
+
+  - identifier.var: "[:!^]:"
+  - identifier.var: "[:!;\\[\\]]\\."
+  - identifier.var: "\\b[dHtm]\\."
+  - identifier.var: "[DLS]:"
+
+  - statement: "(\\{:|\\[):"
+
+  - identifier: "(]:|~|/(\\.\\.?)?|/|\\\\\\.?)"
+  - identifier: "[bfM]\\."
+
+  - statement: "[~][.:]"
+  - statement: "[/\\\\]:"
+
+  - constant.specialChar: "a[.:]|_.?"
+
+  - constant.specialChar: "__"
+  - statement: "_:|__:"
+
+  - constant.number: "\\b_?[0-9][0-9\\.xedEfbjpar_]*\\b"
+  - statement: "_?[0-9]:"
+
+  - special: "(\\{\\{|\\}\\})"
+  - symbol: "=[.:]"
+  - special: "\\b(for(_\\w+)|while|end|if|else|whilst|catch[dt]?)\\."
+
+  - constant.string:
+      start: "'"
+      end: "'"
+      rules: []
+
+  - comment:
+      start: "NB[:.]"
+      end: "$"
+      rules: []
+  - comment: "^#!/.*"

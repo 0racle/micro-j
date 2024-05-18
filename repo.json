@@ -1,0 +1,16 @@
+[{
+    "Name": "j",
+    "Description": "J programming language support for the Micro editor",
+    "Tags": ["j", "syntax", "array"],
+    "Website": "https://github.com/0racle/micro-j",
+    "License": "MIT",
+    "Versions": [
+    {
+        "Version": "1.0.0",
+        "Url": "https://github.com/0racle/micro-j/archive/1.0.0.zip",
+        "Require": {
+            "micro": ">=2.0.13"
+        }
+    }
+  ]
+}]
