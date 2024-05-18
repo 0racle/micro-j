@@ -7,7 +7,7 @@
     "Versions": [
     {
         "Version": "1.0.0",
-        "Url": "https://github.com/0racle/micro-j/archive/1.0.0.zip",
+        "Url": "https://github.com/0racle/micro-j/archive/refs/tags/v1.0.0.zip",
         "Require": {
             "micro": ">=2.0.13"
         }

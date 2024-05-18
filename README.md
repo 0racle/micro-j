@@ -12,7 +12,6 @@ Until that is done, you can either clone the repo, or update your repository set
 Simply clone this repo into `~/.config/micro/plug` and restart micro.
 
 ### Repository
-:s
 
 Add this repo to the `pluginrepos` in `~/.config/micro/settings.json` and restart micro.
 
